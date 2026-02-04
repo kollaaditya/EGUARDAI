@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduGuard AI — Early Dropout Risk Prediction</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">EduGuard AI</div>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#demo">Quick Demo</a>
+        <a href="#dashboards">Dashboards</a>
+        <a href="#insights">Insights</a>
+      </div>
+      <button class="cta">Request Pilot</button>
+    </nav>
+
+    <div class="hero-content">
+      <div>
+        <p class="badge">Hackathon MVP</p>
+        <h1>Spot early dropout risk with a transparent, student-first AI.</h1>
+        <p class="subtitle">
+          EduGuard AI uses attendance, internal marks, and assignment delays to
+          predict risk levels (Low/Medium/High) so educators can intervene early.
+        </p>
+        <div class="hero-actions">
+          <button class="primary">See the Demo</button>
+          <button class="secondary">Download Sample Data</button>
+        </div>
+        <div class="stats">
+          <div>
+            <h3>3 Inputs</h3>
+            <p>Simple, explainable signals.</p>
+          </div>
+          <div>
+            <h3>1 Minute</h3>
+            <p>Setup for a working pilot.</p>
+          </div>
+          <div>
+            <h3>Real-time</h3>
+            <p>Instant risk predictions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Why it matters</h2>
+        <p>
+          Early alerts help mentors act fast—before absenteeism or missed
+          assignments become permanent dropouts.
+        </p>
+        <ul>
+          <li>Transparent model with clear feature importance.</li>
+          <li>Designed for hackathons and quick demos.</li>
+          <li>Built on Python, pandas, and scikit-learn.</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section id="overview" class="section">
+    <h2>Project Overview</h2>
+    <p>
+      EduGuard AI is a lightweight MVP that predicts dropout risk using a Random
+      Forest Classifier. It is designed for clarity—every prediction includes a
+      simple explanation of what drove the result.
+    </p>
+    <div class="overview-grid">
+      <div class="card">
+        <h3>Input Signals</h3>
+        <p>Attendance %, internal marks, and assignment delay days.</p>
+      </div>
+      <div class="card">
+        <h3>Output</h3>
+        <p>Risk levels: Low, Medium, or High dropout probability.</p>
+      </div>
+      <div class="card">
+        <h3>Intervention</h3>
+        <p>Actionable alerts for counselors and faculty.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" class="section highlight">
+    <div>
+      <h2>Quick Risk Demo</h2>
+      <p>Enter a student snapshot to preview the risk estimate.</p>
+      <form class="demo-form" id="riskForm">
+        <label>
+          Attendance Percentage
+          <input type="number" min="0" max="100" value="86" id="attendance" />
+        </label>
+        <label>
+          Internal Marks
+          <input type="number" min="0" max="100" value="72" id="marks" />
+        </label>
+        <label>
+          Assignment Delay (days)
+          <input type="number" min="0" max="30" value="4" id="delay" />
+        </label>
+        <button type="submit">Predict Risk</button>
+      </form>
+    </div>
+    <div class="result-card" id="resultCard">
+      <h3>Predicted Risk</h3>
+      <p class="risk-level" id="riskLevel">Medium</p>
+      <p class="risk-note" id="riskNote">
+        Higher assignment delays and lower attendance tend to increase risk.
+      </p>
+    </div>
+  </section>
+
+  <section id="dashboards" class="section">
+    <h2>Dashboards</h2>
+    <div class="dashboard-grid">
+      <div class="card">
+        <h3>Student Dashboard</h3>
+        <p>Single-student predictions with clear next steps.</p>
+        <ul>
+          <li>Instant risk output</li>
+          <li>Simple input fields</li>
+          <li>Explainable results</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Faculty Dashboard</h3>
+        <p>Bulk predictions and cohort trends in one view.</p>
+        <ul>
+          <li>Risk distribution charts</li>
+          <li>Sortable student table</li>
+          <li>Priority action list</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="insights" class="section highlight">
+    <h2>Feature Insights</h2>
+    <div class="insight-grid">
+      <div>
+        <h3>Attendance</h3>
+        <p>Lower attendance is the strongest signal for higher dropout risk.</p>
+      </div>
+      <div>
+        <h3>Internal Marks</h3>
+        <p>Struggling grades often align with growing disengagement.</p>
+      </div>
+      <div>
+        <h3>Assignment Delays</h3>
+        <p>Frequent delays highlight workload or motivation challenges.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <h3>EduGuard AI</h3>
+      <p>Early Dropout Risk Prediction System for proactive intervention.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#overview">Overview</a>
+      <a href="#demo">Demo</a>
+      <a href="#dashboards">Dashboards</a>
+      <a href="#insights">Insights</a>
+    </div>
+    <button class="cta">Contact the Team</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
